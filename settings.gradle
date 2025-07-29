@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+        maven { url = uri("https://maven.scijava.org/content/repositories/public/") }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url = uri("https://maven.scijava.org/content/repositories/public/") }
+    }
+}
+rootProject.name = "NotesAppAndroidProject"
+include ':app'
+include ':wearosmodule'

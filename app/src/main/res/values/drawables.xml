@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_add" type="drawable">@drawable/baseline_add_24</item>
+    <item name="ic_arrow_back" type="drawable">@drawable/baseline_arrow_back_24</item>
+    <item name="ic_arrow_down" type="drawable">@drawable/baseline_arrow_downward_24</item>
+    <item name="ic_delete" type="drawable">@drawable/baseline_delete_forever_24</item>
+    <item name="ic_person" type="drawable">@drawable/baseline_person_24</item>
+    <item name="ic_search" type="drawable">@drawable/baseline_search_24</item>
+    <item name="ic_security" type="drawable">@drawable/baseline_security_24</item>
+    <item name="ic_lock" type="drawable">@drawable/baseline_lock_24</item>
+    <item name="ic_close" type="drawable">@drawable/baseline_close_24</item>
+    <item name="ic_notes" type="drawable">@drawable/baseline_notes_24</item>
+    <item name="ic_archive" type="drawable">@drawable/baseline_archive_24</item>
+    <item name="ic_settings" type="drawable">@drawable/baseline_settings_24</item>
+    <item name="ic_menu" type="drawable">@drawable/baseline_menu_24</item>
+</resources>

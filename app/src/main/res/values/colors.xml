@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimaryDark">@color/accentRed</color>
+    <color name="colorPrimary">#F6F6F6</color>
+    <color name="colorAccent">@android:color/black</color>
+
+    <color name="accentRed">#FF03DAC5</color>
+    <color name="backgroundCardView">#FFFFFF</color>
+
+    <color name="colorTint">#FFFFFF</color>
+    <color name="gray">#626262</color>
+    <color name="white_alpha50">#80FFFFFF</color>
+
+    <color name="color_65000000">#65000000</color>
+    <color name="color_text_secondary">#828282</color>
+    <color name="color_333333">#333333</color>
+    <color name="alpha10_000000">#19000000</color>
+
+</resources>

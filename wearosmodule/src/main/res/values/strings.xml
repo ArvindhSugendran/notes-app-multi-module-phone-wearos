@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wear OS Module</string>
+    <string name="list">List</string>
+    <string name="no_notes_found">No Notes Found</string>
+    <string name="note">Note</string>
+    <string name="lb_yesterday">yesterday</string>
+    <string name="lb_hour_ago">hour(s) ago</string>
+    <string name="lb_minute_ago">minute ago</string>
+    <string name="lb_just_finished">just now</string>
+    <string name="lb_day_ago">day(s) ago</string>
+    <string name="search">Search</string>
+    <string name="new_note">New Note</string>
+    <string name="title">Title name</string>
+    <string name="content">Add content</string>
+    <string name="created_at">Created: %s</string>
+    <string name="update_at">Updated: %s</string>
+    <string name="error_title_note">You must input title</string>
+    <string name="error_title_content">You must input content</string>
+    <string name="title_header">Title</string>
+    <string name="content_header">Content</string>
+</resources>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="enter_app_password_title">ENTER PASSWORD</string>
+    <string name="enter_app_password_description">Please enter your app password</string>
+
+    <string name="reset_password_title">RESET PASSWORD</string>
+    <string name="reset_password_description">Please enter the answer for security question to reset the password</string>
+
+    <string name="set_password_title">SET PASSWORD</string>
+    <string name="set_password_description">Please set new app password</string>
+
+    <string name="confirm_password_title">CONFIRM PASSWORD</string>
+    <string name="confirm_password_description">Please confirm password and answer security question to reset password</string>
+
+    <string name="notes_code">Notes</string>
+    <string name="app_password">App password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="set_app_password">Set app password</string>
+
+    <string name="open">OPEN</string>
+    <string name="next">NEXT</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="where_s_my_birthplace">Where\'s my birthplace?</string>
+
+    <string name="menu_note">Note</string>
+    <string name="list">List</string>
+    <string name="no_notes_found">No Notes Found</string>
+    <string name="bin_is_empty">Bin is Empty</string>
+    <string name="search">Search</string>
+
+    <string name="created_at">Created: %s</string>
+    <string name="update_at">Last updated: %s</string>
+    <string name="menu_list">List</string>
+    <string name="lb_yesterday">yesterday</string>
+    <string name="lb_hour_ago">hour(s) ago</string>
+    <string name="lb_minute_ago">minute ago</string>
+    <string name="lb_just_finished">just now</string>
+    <string name="lb_day_ago">day(s) ago</string>
+    <string name="must_select_one_item">You must select at least 1 item</string>
+    <string name="no_notes">You have no notes yet</string>
+    <string name="please_chosse_one">Please choose one file</string>
+
+    <string name="title">Title name</string>
+    <string name="content">Add content</string>
+    <string name="title_header">Title</string>
+    <string name="content_header">Content</string>
+    <string name="count">Count: %d</string>
+    <string name="error_title_note">You must input title</string>
+    <string name="error_title_content">You must input content</string>
+    <string name="note">Note</string>
+    <string name="new_note">New Note</string>
+
+    <string name="please_enter_dihits">Please enter 4~8 digits.</string>
+    <string name="pass_not_match">Confirm password doesn\'t match</string>
+    <string name="notes">Notes</string>
+    <string name="recyclebin">RecycleBin</string>
+    <string name="settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="create_note">Create note</string>
+    <string name="restore_note">Restore</string>
+    <string name="delete_note">Delete</string>
+    <string name="change_question">Change Question</string>
+
+</resources>

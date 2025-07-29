@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Status1 -->
+        <LinearLayout
+            android:id="@+id/statusBackground1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/accentRed"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:ellipsize="middle"
+                android:text="@string/note"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.1"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/statusContent"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:ellipsize="middle"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/list"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <com.app.notesappandroidproject.widget.SearchViewComponent
+                android:id="@+id/searchViewComponent"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/statusShadow"
+            android:layout_marginTop="-15dp">
+
+            <!-- Status2 -->
+            <LinearLayout
+                android:id="@+id/statusBackground2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/accentRed"
+                android:orientation="vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notes_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="14dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                tools:listitem="@layout/notes_item"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_no_note"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/no_notes_found"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/statusShadow"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/shadow"
+            android:layout_below="@id/statusBackground1" />
+
+        <!-- Back -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/statusBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/accentRed"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            android:src="@drawable/ic_close"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabSize="mini"
+            app:tint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/accentRed"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_search"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabSize="mini"
+            app:tint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_confirm_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#000000"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingStart="22dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="9dp"
+            app:icon="@drawable/baseline_delete_forever_24"
+            app:iconTint="@color/white"
+            android:text="@string/delete_note"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:theme="@style/MyMaterialTheme"
+            app:elevation="3dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_creat_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#000000"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingStart="22dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="9dp"
+            app:icon="@drawable/baseline_add_24"
+            app:iconTint="@color/white"
+            android:text="@string/create_note"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:theme="@style/MyMaterialTheme"
+            app:elevation="3dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_delete_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingStart="22dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="9dp"
+            android:text="@string/delete_note"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:elevation="3dp"
+            app:icon="@drawable/ic_delete"
+            app:iconTint="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

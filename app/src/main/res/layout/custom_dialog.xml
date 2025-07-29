@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="25dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.mmin18.widget.RealtimeBlurView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/content1"
+                android:layout_alignBottom="@id/content1"
+                app:realtimeBlurRadius="100dp"
+                app:realtimeDownsampleFactor="4"
+                app:realtimeOverlayColor="#99FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/content1"
+                style="@style/AppTheme.CardView"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    style="@style/AppTheme.Settings.View"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical"
+                    android:background="@null"
+                    android:paddingBottom="0dp">
+
+                    <TextView
+                        android:id="@+id/mTitle"
+                        style="@style/AppTheme.Settings.Title" />
+
+                    <TextView
+                        android:id="@+id/mMessage"
+                        style="@style/AppTheme.Settings.Subtitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/mButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlSymmetry">
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="50dp"
+                        app:flexWrap="wrap"
+                        app:justifyContent="flex_end">
+
+                        <Button
+                            android:id="@+id/mButtonNeg"
+                            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:paddingStart="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/accentRed" />
+
+                        <Button
+                            android:id="@+id/mButtonPos"
+                            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:paddingStart="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/accentRed" />
+
+                    </com.google.android.flexbox.FlexboxLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
