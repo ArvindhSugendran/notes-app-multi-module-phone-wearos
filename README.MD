@@ -79,11 +79,6 @@ Key Principles
 
 🏫 Learnings
 
-## ⚠️ Note
-
-Some legacy dependencies used in this project may not resolve with the latest Gradle versions due to deprecation of JCenter and changes in dependency hosting.
-
-The core architecture, UI systems, and features remain fully functional and represent the primary focus of this project.
 This project helped in gaining hands-on experience with:
 ```
 ✦ Building multi-device Android apps (Phone + Wear OS)
@@ -94,6 +89,10 @@ This project helped in gaining hands-on experience with:
 ✦ Integrating Firebase for backend support
 ✦ Handling lifecycle-aware data with LiveData
 ```
+
+> ## ⚠️ Note
+
+Some legacy dependencies used in this project may not resolve with the latest Gradle versions due to deprecation of JCenter and changes in dependency hosting. The core architecture, UI systems, and features remain fully functional and represent the primary focus of this project.
 
 👨‍💻 Development
 ```
