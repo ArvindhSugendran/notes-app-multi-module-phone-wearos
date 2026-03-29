@@ -101,5 +101,5 @@ Some legacy dependencies used in this project may not resolve with the latest Gr
 ✦ Built as a real-world application with cross-device capabilities
 ```
 
-👨‍💻 Author
+👨‍💻 Author  
 Arvindh Prasadh Sugendran
