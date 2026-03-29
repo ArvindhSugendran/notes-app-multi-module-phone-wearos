@@ -6,9 +6,9 @@ Notes enables users to store important information with PIN-protected access, wh
 
 ✨ Highlights
 
-🔐 Secure by Design – PIN-protected access for private notes
-📱 Phone + Wear OS Support – Full multi-device experience
-🔄 Real-time Sync – Seamless data sync using Wearable Data Layer API
-🗑️ Recycle Bin – Recover accidentally deleted notes
-⚡ Lightweight & Fast – Minimal UI with optimized performance
-🧩 Clean MVVM Architecture with scalable structure
+🔐 Secure by Design – PIN-protected access for private notes  
+📱 Phone + Wear OS Support – Full multi-device experience  
+🔄 Real-time Sync – Seamless data sync using Wearable Data Layer API  
+🗑️ Recycle Bin – Recover accidentally deleted notes  
+⚡ Lightweight & Fast – Minimal UI with optimized performance  
+🧩 Clean MVVM Architecture with scalable structure  
