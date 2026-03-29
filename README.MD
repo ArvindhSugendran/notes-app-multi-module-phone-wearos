@@ -21,7 +21,7 @@ The app uses the Wearable Data Layer API to enable:
 ✦ Background updates via Wearable Listener Service
 ```
 
-🚀 Features
+## 🚀 Features
 ```
 ✦ PIN-protected authentication for secure access
 ✦ Create, edit, and delete text-based notes
@@ -31,7 +31,7 @@ The app uses the Wearable Data Layer API to enable:
 ✦ Offline-first data handling with Room DB
 ```
 
-🧠 Architecture
+## 🧠 Architecture
 
 This project follows MVVM (Model-View-ViewModel) with a clean separation of concerns:
 ```
@@ -53,7 +53,7 @@ Key Principles
 ✦ Offline-first approach with local persistence
 ```
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 ```
 ✦ Language: Java
 ✦ UI: XML
@@ -67,7 +67,7 @@ Key Principles
 	•	Wearable Listener Service
 ```
 
-🎯 Key Engineering Highlights
+## 🎯 Key Engineering Highlights
 ```
 ✦ Multi-module architecture (Phone + Wear OS)
 ✦ Cross-device synchronization system
@@ -77,7 +77,7 @@ Key Principles
 ✦ Optimized for performance and low resource usage
 ```
 
-🏫 Learnings
+## 🏫 Learnings
 
 This project helped in gaining hands-on experience with:
 ```
@@ -94,12 +94,12 @@ This project helped in gaining hands-on experience with:
 
 Some legacy dependencies used in this project may not resolve with the latest Gradle versions due to deprecation of JCenter and changes in dependency hosting. The core architecture, UI systems, and features remain fully functional and represent the primary focus of this project.
 
-👨‍💻 Development
+## 👨‍💻 Development
 ```
 ✦ Developed from scratch
 ✦ Focused on simplicity, performance, and usability
 ✦ Built as a real-world application with cross-device capabilities
 ```
 
-👨‍💻 Author  
+## 👨‍💻 Author  
 Arvindh Prasadh Sugendran
