@@ -21,10 +21,11 @@ The app uses the Wearable Data Layer API to enable:
 	•	Background updates via Wearable Listener Service
 
 🚀 Features
-
+```
 ✦ PIN-protected authentication for secure access
 ✦ Create, edit, and delete text-based notes
 ✦ Recycle Bin for restoring deleted notes
 ✦ Cross-device sync (Phone ↔ Wear OS)
 ✦ Lightweight and intuitive UI/UX
 ✦ Offline-first data handling with Room DB
+```
