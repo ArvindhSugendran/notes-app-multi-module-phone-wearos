@@ -16,9 +16,9 @@ Notes enables users to store important information with PIN-protected access, wh
 ## 🔄 Sync System
 ```
 The app uses the Wearable Data Layer API to enable:
-	•	Real-time synchronization between phone and smartwatch
-	•	Consistent data across devices
-	•	Background updates via Wearable Listener Service
+✦ Real-time synchronization between phone and smartwatch
+✦ Consistent data across devices
+✦ Background updates via Wearable Listener Service
 ```
 
 🚀 Features
